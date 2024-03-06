@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyoo App</title>
+    <style>
+        #container{
+            /*/background-color: rgb(225, 218, 208);/*//*/ border: 2px solid blue;*/
+        }
+        #title{ /*/ border: 2px solid black; */
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            background-color: #646dcb; 
+            color:white; font-family: system-ui, -apple-system,
+             BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+             Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        img{
+            width: 50%; height: 50%; 
+        }
+        .b-bgcolor{
+            background-color: white;
+        }
+        .b-bgbutton{
+            background-color: #646dcb; 
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="b-bgcolor  " style="text-align:center;">
+        <div id="title" >
+            DYOO APP
+        </div>
+        <div id="logo"  >
+            <img src="logo.png" alt="our logo"> 
+        </div>
+        <div id="action"; style="text-align: center;">
+            <button id="myactionbutton" style="font-size: larger"
+             class="b-bgbutton">
+                 PROCEED 
+            </button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+
+<script>
+    // The codes in 65-67 is used to give a function 
+        function nextPage() {
+        window.location.href = 'page2.html'
+    }
+    //in line 69 variable is being assigned a html element
+    // in the document(myactionbutton)
+    var MyButtonElement = document.getElementById('myactionbutton')
+    //in line 72 aneventlistener is added to the variable (variableA)
+    // which allows it go to the next page when the variableA is clicked
+    MyButtonElement.addEventListener('click', nextPage)
+    
+
+</script>
+</html>

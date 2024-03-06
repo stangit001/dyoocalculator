@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition page</title>
+</head>
+<body>
+    <h1>Addition</h1>
+    <div>
+        <h5> Input your first value</h5>
+        <input id="firstvalue" type="number" >
+    </div>
+    <div>
+        <h5>Input your second value</h5>
+        <input id="secondvalue" type="number" placeholder="Input yourvalue">
+    </div><br>
+    <div >
+        <button id="button">Calculate</button>
+    </div> <br>
+    <div>
+        <input id="ANSWER" value="" type="number" disabled placeholder="answer:">
+    </div>
+</body>
+<script>
+    function proceed(firstvalue,secondvalue){
+        var Result
+        Result = firstvalue + secondvalue
+        
+        var answerbox = document.getElementById('ANSWER')
+        
+        answerbox.value = Result
+    }
+
+    var firstboxvalue = parseFloat(document.getElementById('firstvalue').value)
+    var secondboxvalue = parseFloat(document.getElementById('secondvalue').value)
+    document.getElementById('button').addEventListener('Click', proceed(firstboxvalue,secondboxvalue))
+
+
+</script>
+</html>
